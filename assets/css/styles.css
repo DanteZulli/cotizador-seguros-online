@@ -1,0 +1,37 @@
+/*************************/
+/****** Variables ********/
+/*************************/
+:root {
+  --font-default: 'Encode Sans', sans-serif;
+}
+:root {
+  /* Paleta de Colores */
+  --blue:#213E7B;
+  --gray-dark: #a6a7a9;
+  --gray: #bdbdbd;
+  --gray-light: #ebebeb;
+  --gray-lighter: #f2f2f2;
+  --white: #ffffff;
+  --black: #414d3c;
+  --green:#09ab93;
+}
+
+/*************************/
+/****** General **********/
+/*************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-default);
+  font-size: 16px;
+}
+
+/*************************/
+/****** Header ***********/
+/*************************/
+
+.navbar-text {
+  font-size: 1.3rem;
+}
