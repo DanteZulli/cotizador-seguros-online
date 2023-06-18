@@ -2,18 +2,18 @@
 /****** Variables ********/
 /*************************/
 :root {
-  --font-default: 'Encode Sans', sans-serif;
+  --font-default: "Encode Sans", sans-serif;
 }
 :root {
   /* Paleta de Colores */
-  --blue:#213E7B;
+  --blue: #213e7b;
   --gray-dark: #a6a7a9;
   --gray: #bdbdbd;
   --gray-light: #ebebeb;
   --gray-lighter: #f2f2f2;
   --white: #ffffff;
   --black: #414d3c;
-  --green:#09ab93;
+  --green: #09ab93;
 }
 
 /*************************/
@@ -26,12 +26,45 @@
   box-sizing: border-box;
   font-family: var(--font-default);
   font-size: 16px;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 6px;
 }
 
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 3px;
+}
 /*************************/
 /****** Header ***********/
 /*************************/
-
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+.navbar .container-fluid {
+  max-width: 1200px;
+}
 .navbar-text {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+}
+.bg-image {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: brightness(0.6);
+}
+
+.navbar-scroll {
+  background-color: var(--blue);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
