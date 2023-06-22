@@ -6,8 +6,6 @@ function loadContent() {
     loadPrice(contentDiv);
   } else if (hash === "form") {
     loadForm(contentDiv);
-  } else if (hash === "confirmation") {
-    loadConfirmation(contentDiv);
   } else if (hash === "" || hash === "menu") {
     loadMenu(contentDiv);
   } else {

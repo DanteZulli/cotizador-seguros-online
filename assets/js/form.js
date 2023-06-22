@@ -7,7 +7,7 @@ function loadForm(contentDiv) {
         .getElementById("myButton")
         .addEventListener("click", function (event) {
           event.preventDefault();
-          window.location.hash = "confirmation";
+          window.location.href = '../confirmation.html';
         });
     })
     .catch((error) => {

@@ -21,7 +21,7 @@
   border-radius: 5px;
 }
 .form input::placeholder {
-    color: var(--gray-dark);
+  color: var(--gray-dark);
 }
 .form select {
   border: 1px solid var(--gray);
@@ -33,20 +33,23 @@
   border-color: var(--blue);
 }
 .form .row .col-md-4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
 }
 .form h1 {
-    font-size: 2rem;
-    font-weight: 600;
-    color: var(--blue);
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--blue);
+  margin-bottom: 1rem;
 }
-label,p {
-    color: var(--blue);
+.form label {
+  color: var(--blue);
+}
+.form p {
+  color: var(--blue);
 }
 /* Stepper */
 .stepper {

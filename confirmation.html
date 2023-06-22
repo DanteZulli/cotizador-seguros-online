@@ -18,9 +18,27 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/confirmation.css" />
   </head>
   <body>
     <header>
+      <img
+        class="bg-image"
+        src="assets/resources/background.jpg"
+        alt="Background"
+      />
+      <div class="header-overlay">
+        <div class="container">
+          <div class="header-content text-center">
+            <h1>¡Listo!</h1>
+            <h2>¡Muchas gracias por confiar en nosotros!</h2>
+            <p>
+              En breve recibirás un correo electrónico con los detalles de tu
+              cotización.
+            </p>
+          </div>
+        </div>
+      </div>
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
@@ -47,7 +65,9 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Menú</a>
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Menú</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="car.html">Auto</a>
@@ -67,46 +87,6 @@
         </div>
       </nav>
     </header>
-    <main>
-      
-    </main>
-    <footer class="text-center text-lg-start text-white">
-      <div class="container-fluid p-4 pb-0">
-        <div class="row">
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto">
-            <p>
-              La compañia de seguros dispone de un Servicio de Atención al
-              asegurado que atenderá las consultas y reclamos que presenten los
-              tomadores de seguros, asegurados, beneficiarios y/o
-              derechohabientes
-            </p>
-            <p>
-              En caso de que el reclamo no haya sido resuelto o que haya sido
-              denegada su admisión o desestimado, total o parcialmente, podrá
-              comunicarse con la Superintendencia de Seguros de la Nacion por
-              teléfono al 0800 666 8400, correo electrónico denuncias@ssn.gob.ar
-              o por formulario web
-            </p>
-          </div>
-          <hr class="w-100 clearfix d-md-none" />
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
-            <p>N° de inscripción en SSN: 499</p>
-            <p>Atención al asegurado: 0800-666-8400</p>
-            <p>Organismo de Control</p>
-            <p>www.argentina.gob.ar/ssn</p>
-          </div>
-          <hr class="w-100 clearfix d-md-none" />
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto">
-            <p><i class="fas fa-home mr-3"></i> Calle Falsa 123</p>
-            <p>
-              <i class="fas fa-globe-americas mr-3"></i> (01020) Springfield,
-              Massachusetts
-            </p>
-            <p><i class="fas fa-phone mr-3"></i> 0810-999-9999</p>
-          </div>
-        </div>
-      </div>
-    </footer>
     <script
       src="https://kit.fontawesome.com/74a364be93.js"
       crossorigin="anonymous"
@@ -116,5 +96,6 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/navbar-scroll.js"></script>
   </body>
 </html>
