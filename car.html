@@ -19,6 +19,7 @@
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/car.css" />
+    <link rel="stylesheet" href="assets/css/faq.css" />
     <link rel="stylesheet" href="assets/css/form-stepper.css" />
     <link rel="stylesheet" href="assets/css/cards.css" />
   </head>
@@ -73,23 +74,54 @@
     <main>
       <div class="container-fluid" id="content"></div>
       <div class="container">
-        <div class="row banners">
-          <div class="col-md-6">
-            <div class="banner">
-              <img
-                src="assets/resources/banner1.png"
-                alt="Banner 1"
-                class="img-fluid"
-              />
+        <div class="accordion" id="accordionExample">
+          <h1>Preguntas frecuentes</h1>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                 ¿Debo llenar el formulario completo?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Si</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus eveniet iusto at quaerat ducimus labore quibusdam, asperiores eaque laudantium ullam consequuntur, hic, voluptatum quasi. Expedita similique doloremque maxime soluta temporibus ab? Ratione inventore quasi dicta voluptas soluta, quo, incidunt laborum ex repellat vero maxime, error exercitationem porro iusto aspernatur omnis.
+              </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="banner">
-              <img
-                src="assets/resources/banner2.png"
-                alt="Banner 2"
-                class="img-fluid"
-              />
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                ¿Puedo cotizar sin completar el formulario?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque fugiat accusantium ex iste sed quas repellendus labore aliquid molestiae necessitatibus sit nam totam excepturi laborum, sunt illo odio, vel quibusdam dignissimos! Vel labore facilis nemo sit? Magni doloribus vitae distinctio officia eveniet veritatis cumque accusamus optio consectetur iste totam ea facilis eos, ipsum dolore numquam? Ad eum, inventore aspernatur magni in blanditiis facere odit explicabo, qui mollitia, nihil incidunt eligendi velit accusantium. Dignissimos fuga rem explicabo a veritatis repudiandae dolorum, illum expedita. Reprehenderit quasi officia harum cum dolores voluptatem voluptatum nam quas libero et exercitationem numquam, quibusdam adipisci! Incidunt, illum.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                ¿Podría tener un descuento?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione dolorem nulla ad quo laborum esse facilis officiis, corrupti alias! Ipsum, quam voluptatum rem temporibus beatae ea nihil laudantium odio quas cumque. Similique nobis animi inventore, consectetur deleniti non pariatur tempore corporis eius iste. Facilis quaerat magnam veniam nam a ad!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                ¿Su cobertura es nacional?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione dolorem nulla ad quo laborum esse facilis officiis, corrupti alias! Ipsum, quam voluptatum rem temporibus beatae ea nihil laudantium odio quas cumque. Similique nobis animi inventore, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptate fugit ducimus quo alias laboriosam exercitationem voluptatibus natus eaque quos? nsectetur deleniti non pariatur tempore corporis eius iste. Facilis quaerat magnam veniam nam a ad!
+              </div>
             </div>
           </div>
         </div>
