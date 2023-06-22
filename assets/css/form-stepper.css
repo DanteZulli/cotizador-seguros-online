@@ -1,6 +1,9 @@
 /*************************/
 /****** FORM & STEPPER ***********/
 /*************************/
+.form-with-stepper {
+  margin-top: 20px;
+}
 .form-with-stepper .title h1 {
   font-weight: 600;
   color: var(--blue);

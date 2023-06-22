@@ -1,0 +1,14 @@
+@media (max-width: 768px) { 
+    .bg-div {
+        display: none;
+    }
+    .about-2 p, .about-2 h2 {
+        text-align: center;
+    }
+    .img-desktop {
+        display: none;
+    }
+    .img-mobile {
+        display: block;
+    }
+}

@@ -9,6 +9,7 @@ section.pricing {
   border-radius: 1rem;
   transition: all 0.2s;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  height: 100%;
 }
 .pricing hr {
   margin: 1.5rem 0;
@@ -75,9 +76,9 @@ s.straight::before {
   border: none;
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
-  position: relative;
-  bottom:-50px;
-  right: -35px; 
+  position: absolute;
+  right: -10px;
+  top:-5px;
 }
 .side-card .card-header {
   background-color: var(--blue);
@@ -87,7 +88,7 @@ s.straight::before {
   font-size: 2rem;
   text-align: center;
   justify-content: space-between;
-
+  gap: 50px;
 }
 .side-card .card-header-title {
   display: flex;
@@ -101,13 +102,16 @@ s.straight::before {
   background-color: var(--white);
   color: var(--blue);
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  border: 1px solid var(--white);
+}
+.side-card .card-header .switch-btn i{
+  font-size: 0.9rem;
+  padding: 0.2rem;
 }
 .side-card .card-header .switch-btn:hover {
   background-color: var(--blue);
