@@ -74,11 +74,10 @@ s.straight::before {
 .side-card {
   border: none;
   border-radius: 1rem;
-  transition: all 0.2s;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
   position: relative;
   bottom:-50px;
-  right: -50px; 
+  right: -35px; 
 }
 .side-card .card-header {
   background-color: var(--blue);

@@ -1,0 +1,129 @@
+/*************************/
+/****** FORM & STEPPER ***********/
+/*************************/
+.form-with-stepper .title h1 {
+  font-weight: 600;
+  color: var(--blue);
+}
+.form,
+.stepper {
+  background-color: var(--gray-lighter);
+  border-radius: 10px;
+}
+/* Form */
+.text {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--gray-dark);
+}
+.form input {
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+}
+.form input::placeholder {
+    color: var(--gray-dark);
+}
+.form select {
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+  color: var(--gray-dark);
+}
+.form-check-input:checked {
+  background-color: var(--blue);
+  border-color: var(--blue);
+}
+.form .row .col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+}
+.form h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--blue);
+    margin-bottom: 1rem;
+}
+label,p {
+    color: var(--blue);
+}
+/* Stepper */
+.stepper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.step i {
+  border: 2px var(--gray) solid;
+  padding: 15px;
+  border-radius: 50%;
+  color: var(--gray);
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+.step p {
+  font-weight: 600;
+  color: var(--gray);
+  margin-bottom: 5px;
+}
+
+.step.active i {
+  border: 2px var(--blue) solid;
+  color: var(--blue);
+}
+.step.active p {
+  color: var(--blue);
+}
+.step.active .line {
+  background-color: var(--blue);
+}
+.step.completed i {
+  border: 2px var(--blue) solid;
+  color: var(--gray-lighter);
+  background-color: var(--blue);
+}
+.step.completed p {
+  color: var(--blue);
+}
+.step.completed .line {
+  background-color: var(--blue);
+}
+.step .line {
+  width: 2px;
+  height: 40px;
+  background-color: var(--gray);
+}
+
+/** Buttons **/
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.btn-primary {
+  background-color: var(--blue);
+  border-color: var(--blue);
+}
+.btn-primary:hover {
+  background-color: var(--gray);
+  border-color: var(--blue-dark);
+}
+.btn-secondary {
+  background-color: var(--gray-lighter);
+  border-color: var(--gray);
+  color: var(--gray-dark);
+}
+.btn-secondary:hover {
+  background-color: var(--gray);
+  border-color: var(--gray-dark);
+  color: var(--gray-lighter);
+}

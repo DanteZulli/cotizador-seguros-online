@@ -37,7 +37,13 @@
               <i class="fas fa-car"></i>
               <h6 class="text-uppercase mb-0">Datos del vehículo</h6>
             </div>
-            <div class="switch-btn" onclick="changeSideCard()" data-toggle="tooltip" data-placement="top" title="Mostrar Plan Seleccionado">
+            <div
+              class="switch-btn"
+              onclick="changeSideCard()"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Mostrar Plan Seleccionado"
+            >
               <i class="fa-solid fa-shield"></i>
             </div>
           </div>
@@ -57,13 +63,236 @@
           </div>
           <div class="row">
             <div class="col-md-4 mb-3">
-              <input type="text" class="form-control" id="name" placeholder="NOMBRE"/>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="NOMBRE *"
+              />
             </div>
             <div class="col-md-4 mb-3">
-              <input type="text" class="form-control" id="surname" placeholder="APELLIDO"/>
+              <input
+                type="text"
+                class="form-control"
+                id="surname"
+                placeholder="APELLIDO *"
+              />
             </div>
             <div class="col-md-4 mb-3">
-              <input type="text" class="form-control" id="dni" placeholder="DNI"/>
+              <input
+                type="text"
+                class="form-control"
+                id="dni"
+                placeholder="NÚMERO DE DOCUMENTO *"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <label for="birth-date">Fecha de Nacimiento:</label>
+              <input type="date" class="form-control" id="birth-date" />
+            </div>
+            <div class="col-md-4 mb-3">
+              <select class="form-select">
+                <option selected disabled>SEXO *</option>
+                <option value="1">HOMBRE</option>
+                <option value="2">MUJER</option>
+                <option value="3">NO BINARIO</option>
+              </select>
+            </div>
+            <div class="col-md-4 mb-3">
+              <select class="form-select">
+                <option selected disabled>ESTADO CIVIL *</option>
+                <option value="1">CASADO</option>
+                <option value="2">SOLTERO</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <select class="form-select">
+                <option selected disabled>NACIONALIDAD *</option>
+                <option value="1">ARGENTINA</option>
+                <option value="2">BOLIVIANA</option>
+                <option value="3">BRASILEÑA</option>
+              </select>
+            </div>
+            <div class="col-md-4 mb-3">
+              <select class="form-select">
+                <option selected disabled>PROFESIÓN *</option>
+                <option value="1">TRABAJO</option>
+                <option value="2">NO TRABAJO</option>
+              </select>
+            </div>
+            <div class="col-md-4 mb-3">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="correo@correo.com"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="TELÉFONO MÓVIL *"
+              />
+            </div>
+            <div class="col-md-4 mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="TELÉFONO FIJO"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <p>¿Sos una persona políticamente expuesta?</p>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="exampleRadios"
+                  id="exampleRadios1"
+                  value="option1"
+                  checked
+                />
+                <label class="form-check-label" for="exampleRadios1">
+                  Si
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="exampleRadios"
+                  id="exampleRadios2"
+                  value="option2"
+                />
+                <label class="form-check-label" for="exampleRadios2">
+                  No
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <h1>Domicilio</h1>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <input
+                type="number"
+                class="form-control"
+                placeholder="CÓDIGO POSTAL *"
+              />
+            </div>
+            <div class="col-md-8 mb-3">
+              <input type="text" class="form-control" placeholder="CALLE *" />
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <input type="text" class="form-control" placeholder="NÚMERO *" />
+            </div>
+            <div class="col-md-4 mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="PROVINCIA *"
+              />
+            </div>
+            <div class="col-md-4 mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="LOCALIDAD *"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <input type="text" class="form-control" placeholder="PISO" />
+            </div>
+            <div class="col-md-4 mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="DEPARTAMENTO"
+              />
+            </div>
+            <div class="col-md-4 mb-3">
+              <input type="text" class="form-control" placeholder="UNIDAD" />
+            </div>
+          </div>
+          <div class="row">
+            <h1>Datos del vehículo</h1>
+          </div>
+          <div class="row">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="PATENTE *"
+                />
+              </div>
+              <div class="col-md-4 mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="NÚMERO DE MOTOR *"
+                />
+              </div>
+              <div class="col-md-4 mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="NÚMERO DE CHASIS *"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <h1>Datos de inspección</h1>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="TELÉFONO MÓVIL *"
+              />
+            </div>
+            <div class="col-md-4 mb-3">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="[1]EMAIL DE INSPECCIÓN *"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <p class="text">*Estos datos son obligatorios</p>
+            <p class="text">
+              [1] La información que otorgo en virtud de la presente operación
+              informática, implica la prestación del consentimiento o dispuesto
+              por la ley 25.326. Conozco que podré ejercer los derechos de
+              acceso, rectificación y supresión de datos y acepto que la
+              información que otorgo podrá ser utilizada para acciones de
+              marketing en forma directa o a través de terceros. La información
+              será archivada por EMPRESA GENERICA con domicilio en Calle Falsa
+              123, Springfield, Massachusetts.
+            </p>
+          </div>
+          <div class="row">
+            <div class="buttons">
+              <button class="btn btn-secondary" onclick="event.preventDefault();history.back();">ANTERIOR</button>
+              <button class="btn btn-primary px-5 py-2" id="myButton">CONTINUAR</button>
+              <button class="btn btn-secondary">CONTÁCTAME</button>
             </div>
           </div>
         </form>
