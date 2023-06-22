@@ -1,5 +1,5 @@
-function loadPrice(contentDiv) {
-  fetch("../../car/car-price.html")
+function loadForm(contentDiv) {
+  fetch("../../car/car-form.html")
     .then((response) => response.text())
     .then((html) => {
       contentDiv.innerHTML = html;

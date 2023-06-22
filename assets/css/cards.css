@@ -42,17 +42,88 @@ section.pricing {
   opacity: 0.7;
   transition: all 0.2s;
 }
-
 .pricing .btn-secondary {
-    border-radius: 10px;
-    margin-bottom: 5px;
-    
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+/* Strike */
+s {
+  text-decoration: none;
+  position: relative;
+}
+s::before {
+  top: 50%; /*tweak this to adjust the vertical position if it's off a bit due to your font family */
+  background: red; /*this is the color of the line*/
+  opacity: 0.7;
+  content: "";
+  width: 110%;
+  position: absolute;
+  height: 0.1em;
+  border-radius: 0.1em;
+  left: -5%;
+  white-space: nowrap;
+  display: block;
+  transform: rotate(-15deg);
+}
+s.straight::before {
+  transform: rotate(0deg);
+  left: -1%;
+  width: 102%;
+}
+/* SMALL CARD */
+.side-card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  bottom:-50px;
+  right: -50px; 
+}
+.side-card .card-header {
+  background-color: var(--blue);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+  justify-content: space-between;
+
+}
+.side-card .card-header-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.side-card .card-header .switch-btn {
+  background-color: var(--white);
+  color: var(--blue);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.side-card .card-header .switch-btn:hover {
+  background-color: var(--blue);
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+.side-card .card-body {
+  padding: 0.5rem;
+  margin: 0 auto;
+  text-align: center;
 }
 /* Hover Effects*/
 @media (min-width: 992px) {
-  .pricing .card:hover {
-    margin-top: -0.25rem;
-    margin-bottom: 0.25rem;
+  .pricing div.card:hover {
+    transform: translate(0, -0.5rem);
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
   }
 

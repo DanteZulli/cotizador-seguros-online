@@ -58,7 +58,6 @@ main {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  height: 100%;
 }
 .step {
   display: flex;
@@ -72,10 +71,13 @@ main {
   border-radius: 50%;
   color: var(--gray);
   font-size: 1.5rem;
+  margin-top: 5px;
 }
 .step p {
   font-weight: 600;
   color: var(--gray);
+  margin-bottom: 5px;
+
 }
 
 .step.active i {
@@ -99,8 +101,8 @@ main {
 .step.completed .line {
   background-color: var(--blue);
 }
-.line {
-  width: 1%;
+.step .line {
+  width: 2px;
   height: 40px;
   background-color: var(--gray);
 }

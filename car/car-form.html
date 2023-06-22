@@ -1,0 +1,73 @@
+<div class="row form-with-stepper">
+  <div class="col-md-3">
+    <div class="p-3 stepper">
+      <div class="step completed">
+        <i class="fas fa-car"></i>
+        <p>Datos del vehículo</p>
+        <span class="line"></span>
+      </div>
+      <div class="step completed">
+        <i class="fa-solid fa-sack-dollar"></i>
+        <p>Cotización</p>
+        <span class="line"></span>
+      </div>
+      <div class="step active">
+        <i class="fa-solid fa-file-lines"></i>
+        <p>Solicitud Online</p>
+        <span class="line"></span>
+      </div>
+      <div class="step">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <p>Confirmación</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-9">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="title text-center text-lg-start">
+          <h1>Solicitud Online</h1>
+          <p>Completá tus datos</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card side-card mb-3" id="side-card">
+          <div class="card-header">
+            <div class="card-header-title">
+              <i class="fas fa-car"></i>
+              <h6 class="text-uppercase mb-0">Datos del vehículo</h6>
+            </div>
+            <div class="switch-btn" onclick="changeSideCard()" data-toggle="tooltip" data-placement="top" title="Mostrar Plan Seleccionado">
+              <i class="fa-solid fa-shield"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              Dodge Charger 1966<br />
+              Patente:ABC123<br />
+              Suma Asegurada: $ 1.000.000
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="py-5 form">
+        <form>
+          <div class="row">
+            <h1>Datos Personales</h1>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <input type="text" class="form-control" id="name" placeholder="NOMBRE"/>
+            </div>
+            <div class="col-md-4 mb-3">
+              <input type="text" class="form-control" id="surname" placeholder="APELLIDO"/>
+            </div>
+            <div class="col-md-4 mb-3">
+              <input type="text" class="form-control" id="dni" placeholder="DNI"/>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -70,148 +70,7 @@
       </nav>
     </header>
     <main>
-      <div class="container-fluid" id="content">
-        <div class="row form-with-stepper">
-          <div class="col-md-3">
-            <div class="p-3 stepper">
-              <div class="step active">
-                <i class="fas fa-car"></i>
-                <p>Datos del vehículo</p>
-                <span class="line"></span>
-              </div>
-              <div class="step">
-                <i class="fa-solid fa-sack-dollar"></i>
-                <p>Cotización</p>
-                <span class="line"></span>
-              </div>
-              <div class="step">
-                <i class="fa-solid fa-file-lines"></i>
-                <p>Solicitud Online</p>
-                <span class="line"></span>
-              </div>
-              <div class="step">
-                <i class="fa-solid fa-thumbs-up"></i>
-                <p>Confirmación</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-9">
-            <div class="title text-center">
-              <h1>Datos del vehículo</h1>
-              <p>Ingresá los datos de tu vehículo - Uso Particular</p>
-            </div>
-            <div class="p-3 form">
-              <form>
-                <div class="row">
-                  <div class="col-md-6 mb-3">
-                    <input class="form-control" placeholder="CÓDIGO POSTAL *" />
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <div class="form-check form-switch">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        role="switch"
-                        id="flexSwitchCheckDefault"
-                      />
-                      <label
-                        class="form-check-label"
-                        for="flexSwitchCheckDefault"
-                        >Es cero kilómetro.</label
-                      >
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <select class="form-select">
-                      <option selected disabled>MARCA *</option>
-                      <option value="1">FORD</option>
-                      <option value="2">CHEVROLET</option>
-                      <option value="3">FIAT</option>
-                    </select>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <select class="form-select">
-                      <option selected disabled>AÑO DE FABRICACIÓN *</option>
-                      <option value="1">1900-1950</option>
-                      <option value="2">1950-2000</option>
-                      <option value="3">2000+</option>
-                    </select>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <select class="form-select">
-                      <option selected disabled>MODELO *</option>
-                      <option value="1">KA</option>
-                      <option value="2">FIESTA</option>
-                      <option value="3">ECOSPORT</option>
-                      <option value="4">FOCUS</option>
-                      <option value="5">MONDEO</option>
-                    </select>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <select class="form-select">
-                      <option selected disabled>ACCESORIOS</option>
-                      <option value="1">AIRE ACONDICIONADO</option>
-                      <option value="2">ALARMA</option>
-                      <option value="3">AIRBAG</option>
-                      <option value="4">ABS</option>
-                      <option value="5">LLANTAS DE ALEACIÓN</option>
-                    </select>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <input
-                      type="email"
-                      class="form-control"
-                      placeholder="[1]EMAIL *"
-                    />
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <input
-                      type="email"
-                      class="form-control"
-                      placeholder="[1][COD.ÁREA] TELÉFONO *"
-                    />
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <img
-                      src="https://developers.google.com/static/recaptcha/images/newCaptchaAnchor.gif"
-                      class="mb-3"
-                      height="70px"
-                      alt="Captcha"
-                    />
-                  </div>
-                </div>
-                <div class="row">
-                  <div>
-                    <p class="text">*Estos datos son obligatorios</p>
-                    <p class="text">
-                      [1] La información que otorgo en virtud de la presente
-                      operación informática, implica la prestación del
-                      consentimiento o dispuesto por la ley 25.326. Conozco que
-                      podré ejercer los derechos de acceso, rectificación y
-                      supresión de datos y acepto que la información que otorgo
-                      podrá ser utilizada para acciones de marketing en forma
-                      directa o a través de terceros. La información será
-                      archivada por EMPRESA GENERICA con domicilio en Calle
-                      Falsa 123, Springfield, Massachusetts.
-                    </p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="buttons">
-                    <a href="#price">
-                      <button id="myButton" class="btn btn-primary">
-                        COTIZAR
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="container-fluid" id="content"></div>
       <div class="container">
         <div class="row banners">
           <div class="col-md-6">
@@ -281,16 +140,12 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/side-card.js"></script>
     <!-- VANILLA SPA :D   -->
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/menu.js"></script>
     <script src="assets/js/price.js"></script>
-    <script src="assets/js/application.js"></script>
+    <script src="assets/js/form.js"></script>
     <script src="assets/js/confirmation.js"></script>
-    <script>
-        document.getElementById('myButton').addEventListener('click', function(event) {
-          event.preventDefault();
-          window.location.hash = 'price';
-        });
-      </script>
   </body>
 </html>
