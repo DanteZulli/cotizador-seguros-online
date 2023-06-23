@@ -5,8 +5,6 @@ function loadMenu(contentDiv) {
     window.location.hostname === "localhost" ||
     window.location.hostname === "127.0.0.1";
   const url = isLocal ? localURL : deployURL;
-  console.log(url);
-
   fetch(url)
     .then((response) => response.text())
     .then((html) => {

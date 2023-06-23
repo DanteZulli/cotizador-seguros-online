@@ -1,5 +1,11 @@
-function loadForm(contentDiv) {
-  fetch("../../car/car-form.html" || "/cotizador-seguros-online/car/car-menu.html")
+function loadForm(contentDiv) {  
+  const localURL = "../../car/car-form.html";
+  const deployURL = "/cotizador-seguros-online/car/car-form.html";
+  const isLocal =
+    window.location.hostname === "localhost" ||
+    window.location.hostname === "127.0.0.1";
+  const url = isLocal ? localURL : deployURL;
+  fetch(url)
     .then((response) => response.text())
     .then((html) => {
       contentDiv.innerHTML = html;
