@@ -3,13 +3,14 @@ section.pricing {
   background: var(--blue);
   background-color: var(--gray-lighter);
   border-radius: 10px;
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
 }
 .pricing .card {
   border: none;
   border-radius: 1rem;
   transition: all 0.2s;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
-  height: 100%;
 }
 .pricing hr {
   margin: 1.5rem 0;
@@ -129,7 +130,6 @@ s.straight::before {
     transform: translate(0, -0.5rem);
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
   }
-
   .pricing .card:hover .btn {
     opacity: 1;
   }

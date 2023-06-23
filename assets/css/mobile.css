@@ -1,14 +1,82 @@
-@media (max-width: 768px) { 
-    .bg-div {
-        display: none;
-    }
-    .about-2 p, .about-2 h2 {
-        text-align: center;
-    }
-    .img-desktop {
-        display: none;
-    }
-    .img-mobile {
-        display: block;
-    }
+@media (max-width: 768px) {
+  /************GENERAL************/
+  main {
+    padding-top: 4px;
+  }
+  /**********LANDING PAGE**********/
+  .bg-image {
+    height: 50vh;
+  }
+  .header-overlay {
+    height: 50vh;
+  }
+  .header-overlay h1 {
+    font-size: 2.5rem;
+  }
+  .icon-boxes {
+    margin-top: 52vh;
+  }
+  .bg-div {
+    display: none;
+  }
+  .about-2 p,
+  .about-2 h2 {
+    text-align: center;
+  }
+  .img-desktop {
+    display: none;
+  }
+  .img-mobile {
+    display: block;
+  }
+  /*********STEPPER**********/
+  .stepper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+  .step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .step i {
+    padding: 10px;
+  }
+  .line-mobile {
+    display: flex;
+    width: 100%;
+    height: 2px;
+    background-color: var(--gray);
+  }
+  .step p {
+    display: none;
+  }
+  .step .line {
+    display: none;
+  }
+  /*******BUTTONS********/
+  .buttons {
+    flex-direction: column;
+  }
+  .buttons .btn-secondary {
+    display: none;
+  }
+  /********PRICING********/
+  .pricing .btn {
+    opacity: 1;
+  }
+  .pricing div.card {
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+  /*********SIDE CARD**********/
+  .side-card {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  
 }

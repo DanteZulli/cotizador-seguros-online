@@ -103,7 +103,7 @@ body {
 /* Icon Boxes */
 .icon-boxes {
   position: relative;
-  margin-top: 65vh; 
+  margin-top: 65vh;
   max-width: 1300px;
 }
 .icon-boxes a {
@@ -143,7 +143,7 @@ body {
   z-index: -1;
   padding: 1.5rem;
   margin: 0.5rem;
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .icon-box i {
   font-size: 1.7rem;
@@ -157,8 +157,8 @@ body {
   color: var(--gray-lighter);
 }
 .icon-box:hover {
-  transform: translate(15px,15px);
-  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+  transform: translate(15px, 15px);
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
   filter: brightness(1.1);
 }
 .icon-box:hover .icon i {
@@ -194,12 +194,13 @@ body {
   max-width: 100%;
   height: auto;
   margin-bottom: 1rem;
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .about-2 {
   padding-top: 0px;
 }
-.about-2 p, .about-2 h2 {
+.about-2 p,
+.about-2 h2 {
   text-align: right;
 }
 
@@ -215,4 +216,64 @@ body {
 footer {
   background-color: var(--blue);
   color: var(--gray-lighter);
+}
+
+/****************************/
+/**KEYFRAMES y ANIMATIONS*/
+/**************************/
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top{
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.left-slide {
+  animation: slide-in-left 1.5s ease-out forwards;
+}
+
+.right-slide {
+  animation: slide-in-right 1.5s ease-out forwards;
+}
+
+.bottom-slide {
+  animation: slide-in-bottom 1.5s ease-out forwards;
+}
+
+.top-slide {
+  animation: slide-in-top 1.5s ease-out forwards;
 }

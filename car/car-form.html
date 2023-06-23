@@ -1,21 +1,27 @@
 <div class="row form-with-stepper">
   <div class="col-md-3">
-    <div class="p-3 stepper">
+    <div class="p-3 stepper left-slide">
       <div class="step completed">
         <i class="fas fa-car"></i>
         <p>Datos del vehículo</p>
         <span class="line"></span>
       </div>
+      <span class="line-mobile"></span>
+
       <div class="step completed">
         <i class="fa-solid fa-sack-dollar"></i>
         <p>Cotización</p>
         <span class="line"></span>
       </div>
+      <span class="line-mobile"></span>
+
       <div class="step active">
         <i class="fa-solid fa-file-lines"></i>
         <p>Solicitud Online</p>
         <span class="line"></span>
       </div>
+      <span class="line-mobile"></span>
+
       <div class="step">
         <i class="fa-solid fa-thumbs-up"></i>
         <p>Confirmación</p>
@@ -25,11 +31,11 @@
   <div class="col-md-9">
     <div class="row align-items-center">
       <div class="col-md-12 position-relative">
-        <div class="title text-center text-lg-start">
+        <div class="title text-center text-lg-start top-slide">
           <h1>Solicitud Online</h1>
           <p>Completá tus datos</p>
         </div>
-        <div class="card side-card mb-3" id="side-card">
+        <div class="card side-card mb-3 top-slide" id="side-card">
           <div class="card-header">
             <div class="card-header-title">
               <i class="fas fa-car"></i>
@@ -54,10 +60,10 @@
           </div>
         </div>
       </div>
-      <div class="py-5 form">
-        <form>
+      <div class="form">
+        <form class="bottom-slide">
           <div class="row">
-            <h1>Datos Personales</h1>
+            <h1 class="mt-0">Datos Personales</h1>
           </div>
           <div class="row">
             <div class="col-md-4 mb-3">
@@ -294,7 +300,9 @@
               >
                 ANTERIOR
               </button>
-              <button class="btn btn-primary px-5 py-2" id="myButton">CONTINUAR</button>
+              <button class="btn btn-primary px-5 py-2" id="myButton">
+                CONTINUAR
+              </button>
               <button class="btn btn-secondary">CONTÁCTAME</button>
             </div>
           </div>
