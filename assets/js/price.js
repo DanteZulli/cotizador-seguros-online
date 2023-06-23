@@ -1,5 +1,5 @@
 function loadPrice(contentDiv) {
-  fetch("../../car/car-price.html" || "/car/car-price.html")
+  fetch("../../car/car-price.html" || "/cotizador-seguros-online/car/car-menu.html")
     .then((response) => response.text())
     .then((html) => {
       contentDiv.innerHTML = html;

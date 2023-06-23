@@ -1,5 +1,5 @@
 function loadForm(contentDiv) {
-  fetch("../../car/car-form.html" || "/car/car-form.html")
+  fetch("../../car/car-form.html" || "/cotizador-seguros-online/car/car-menu.html")
     .then((response) => response.text())
     .then((html) => {
       contentDiv.innerHTML = html;
