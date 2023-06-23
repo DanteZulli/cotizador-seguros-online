@@ -13,7 +13,11 @@ function loadForm(contentDiv) {
         .getElementById("myButton")
         .addEventListener("click", function (event) {
           event.preventDefault();
-          window.location.href = '../confirmation.html';
+          if(isLocal){
+            window.location.href = '../confirmation.html';
+          }else {
+            window.location.href = '/cotizador-seguros-online/confirmation.html';
+          }
         });
     })
     .catch((error) => {
