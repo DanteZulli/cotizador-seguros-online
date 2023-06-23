@@ -1,5 +1,5 @@
 function loadMenu(contentDiv) {
-  fetch("../../car/car-menu.html")
+  fetch("../../car/car-menu.html" || "/car/car-menu.html")
     .then((response) => response.text())
     .then((html) => {
       contentDiv.innerHTML = html;
