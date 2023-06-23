@@ -1,5 +1,13 @@
 function loadMenu(contentDiv) {
-  fetch("../../car/car-menu.html" || "/cotizador-seguros-online/car/car-menu.html")
+  const localURL = "../../car/car-menu.html";
+  const deployURL = "/cotizador-seguros-online/car/car-menu.html";
+  const isLocal =
+    window.location.hostname === "localhost" ||
+    window.location.hostname === "127.0.0.1";
+  const url = isLocal ? localURL : deployURL;
+  console.log(url);
+
+  fetch(url)
     .then((response) => response.text())
     .then((html) => {
       contentDiv.innerHTML = html;
