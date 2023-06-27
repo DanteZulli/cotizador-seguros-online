@@ -8,4 +8,4 @@ Este cotizador implementa el uso de forms, validaciones, clases, prototipos, fun
 
 ## Licencia
 
-Este proyecto posee la licencia MIT - En el LICENSE.md podes encontrar más detalles. - [MIT](https://choosealicense.com/licenses/mit/)
+Este proyecto posee la licencia GPL - En el LICENSE.md podes encontrar más detalles.
